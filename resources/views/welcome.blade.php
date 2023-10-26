@@ -186,18 +186,18 @@
 
                             <div class="mb-4">
                                 <label for="name" class="block text-white text-sm font-bold mb-2">Nombre:</label>
-                                <input type="text" name="name" id="correo" class="w-full px-4 py-2 border rounded-lg">
+                                <input type="text" name="name" id="name" class="w-full px-4 py-2 border rounded-lg">
                             </div>
 
 
                             <div class="mb-4">
-                                <label for="correo" class="block text-white text-sm font-bold mb-2">Correo:</label>
-                                <input type="email" name="correo" id="correo" class="w-full px-4 py-2 border rounded-lg">
+                                <label for="email" class="block text-white text-sm font-bold mb-2">Correo:</label>
+                                <input type="email" name="email" id="email" class="w-full px-4 py-2 border rounded-lg">
                             </div>
                             
                             <div class="mb-4">
-                                <label for="opciones" class="block text-white text-sm font-bold mb-2">Selecciona una opción:</label>
-                                <select name="opciones" id="opciones" class="w-full px-4 py-2 border rounded-lg">
+                                <label for="options" class="block text-white text-sm font-bold mb-2">Selecciona una opción:</label>
+                                <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg">
                                     <option value="Gastos médicos mayores">Gastos médicos mayores</option>
                                     <option value="Seguro de vida">Seguro de vida</option>
                                     <option value="Seguro de hogar">Seguro de hogar</option>
