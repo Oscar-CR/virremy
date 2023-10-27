@@ -2,16 +2,79 @@
 
 # Estimado , {{ $name }}
 
-Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo en contacto con ustedes para obtener más información acerca del servicio de {{ $cotization }} que ofrecen. He oído hablar muy bien de su reputación en la industria y me gustaría conocer en detalle cómo funciona este servicio y cuáles son las opciones disponibles.
+Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo en contacto con ustedes para obtener más información acerca del servicio de **{{ $cotization }}** que ofrecen. 
 
-Agradecería cualquier información que puedan proporcionarme para ayudarme a tomar una decisión informada sobre si este servicio se adapta a mis necesidades y circunstancias. También, si tienen material informativo o brochures disponibles, estaría interesado en recibirlos.
+<br>
 
-Por favor, siéntanse libres de contactarme a través de este correo electrónico o por teléfono al 55 5555 5555 para programar una consulta o proporcionar más detalles.
 
-Estoy muy interesado en conocer más sobre su servicio de Gastos Médicos Mayores y agradezco de antemano cualquier información que puedan ofrecerme.
+@switch($cotization)
+    @case('Gastos médicos mayores')
+        Plan de Cobertura: Individual
+        Suma Asegurada Deseada: 500,000 MXN
+        Deducible: 10,000 MXN
+        Cobertura de Enfermedades Críticas: Sí
+        Coaseguro: 20%
+        @break
+
+    @case('Seguro de vida')
+        Tipo de Seguro de Vida: Vida entera
+        Suma Asegurada Deseada: 1,000,000 MXN
+        Beneficiarios: Cónyuge e hijos
+        @break
+
+    @case('Seguro de hogar')
+        Tipo de Vivienda: Casa
+        Ubicación de la Vivienda: Ciudad de México
+        Suma Asegurada para la Vivienda: 1,500,000 MXN
+        Cobertura de Contenidos: 300,000 MXN
+        Cobertura contra Daños Naturales: Sí
+        @break
+
+    @case('Seguro de Auto')
+        Marca y Modelo del Vehículo: Toyota Corolla 2022
+        Tipo de Cobertura: Amplia
+        Suma Asegurada para Daños a Terceros: 500,000 MXN
+        Cobertura de Responsabilidad Civil: 500,000 MXN
+        Deducible: 5,000 MXN
+        @break
+
+    @case('Retiro')
+        Plan de Retiro: Afore
+        Contribución Mensual: 2,000 MXN
+        Duración del Plan: 30 años
+        @break
+
+    @case('Inversión')
+        Tipo de Inversión: Acciones
+        Monto de Inversión Inicial: 50,000 MXN
+        Horizonte de Inversión: 10 años
+        @break
+
+    @case('Rentas privadas')
+        Tipo de Inversión: Propiedad
+        Inversión Inicial: 1,000,000 MXN
+        Duración de la Inversión: 5 años
+        Rendimiento Esperado: 8% anual
+        @break
+
+    @case('Póliza de comercio')
+        Tipo de Negocio: Restaurante
+        Ubicación del Negocio: Guadalajara
+        Suma Asegurada Deseada: 2,000,000 MXN
+        Cobertura de Responsabilidad Civil: 500,000 MXN
+        Cobertura contra Daños a la Propiedad: 1,500,000 MXN
+        @break
+
+    @default
+        Gracias por su tiempo y atención.
+@endswitch
+
+
+
+<br>
 
 Gracias por su tiempo y atención.
 
-Atentamente,
+Atentamente, Vianey Oceguera Zepeda
 
 @endcomponent
