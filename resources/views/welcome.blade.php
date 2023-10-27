@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
     </head>
     <body>
@@ -229,7 +230,12 @@
         </div>
 
 
-            
+        <df-messenger
+            intent="WELCOME"
+            chat-title="NewAgent"
+            agent-id="fd268007-098c-4fa5-ad7a-076de917d1f9"
+            language-code="es"
+            ></df-messenger>
 
     </body>
 </html>
