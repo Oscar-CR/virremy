@@ -13,6 +13,13 @@
 
     </head>
     <body>
+    <script>
+       function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+            console.log('Mobile menu toggled');
+        }
+    </script>
         <style>
             @keyframes fade-in {
                 0% {
@@ -42,29 +49,42 @@
         </style>
         <!-- Encabezado Sticky -->
         <header class="fixed top-0 left-0 right-0 z-50 w-full text-white p-4 flex justify-between items-center bg-black bg-opacity-50">
-            <!-- Sección Izquierda -->
-            <div class="left-section">
-                <a href="#" class="text-3xl font-bold">ViRrEmy</a>
-                <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
-            </div>
-            <!-- Sección Derecha -->
-            <div class="right-section">
-                <nav class="md:hidden"> <!-- Oculta el menú en tabletas y dispositivos móviles -->
-                    <button id="menu-toggle" class="text-white text-2xl">
-                        &#9776; <!-- Icono de hamburguesa para mostrar/ocultar el menú -->
-                    </button>
-                </nav>
-                <nav class="hidden md:block">
-                    <ul class="flex space-x-4">
-                        <li><a href="#inicio" class="hover:underline">Inicio</a></li>
-                        <li><a href="#acerca-de" class="hover:underline">Acerca de</a></li>
-                        <li><a href="#servicios" class="hover:underline">Servicios</a></li>
-                        <li><a href="#exito" class="hover:underline">Casos de éxito</a></li>
-                        <li><a href="#contacto" class="hover:underline">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <!-- Sección Izquierda -->
+        <div class="left-section">
+            <a href="#" class="text-3xl font-bold">ViRrEmy</a>
+            <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
+        </div>
+        <!-- Sección Derecha -->
+        <div class="right-section">
+            <nav class="md:hidden">
+                <button id="menu-toggle" class="text-white text-3xl" onclick="toggleMobileMenu()">
+                    &#9776;
+                </button>
+            </nav>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#inicio" class="hover:underline text-2xl ">Inicio</a></li>
+                    <li><a href="#acerca-de" class="hover:underline text-2xl">Acerca de</a></li>
+                    <li><a href="#servicios" class="hover:underline text-2xl">Servicios</a></li>
+                    <li><a href="#exito" class="hover:underline text-2xl">Casos de éxito</a></li>
+                    <li><a href="#contacto" class="hover:underline text-2xl">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-menu" class=" hidden md:hidden fixed z-50  bg-black bg-opacity-50 w-full" style="margin-top: 68px;">
+        <!-- Contenido del menú en dispositivos móviles -->
+        <ul class="text-white text-2xl p-4 space-y-4">
+            <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+            <li><a href="#acerca-de" class="hover:underline">Acerca de</a></li>
+            <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+            <li><a href="#exito" class="hover:underline">Casos de éxito</a></li>
+            <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+        </ul>
+    </nav>
+
+    
 
        <!--  <div>
             <img src="{{ asset('/img/banner.png') }}" alt="img" class="w-full" />
@@ -246,4 +266,3 @@
 
     </body>
 </html>
-/
