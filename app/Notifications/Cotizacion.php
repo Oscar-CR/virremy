@@ -51,8 +51,8 @@ class Cotizacion extends Notification
             'cotization' => $this->cotization,
             'details' => $this->details,
         ])
-        ->subject('Actualizacion de tu solicitud')
-        ->from('admin@intranet.promolife.lat', 'Intranet Corporativa BH - PL');
+        ->subject('Cotización')
+        ->from('contacto@amatuspies.com', 'Cotización');
     }   
 
     /**

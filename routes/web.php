@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [FormularioController::class, 'index'])->name('index');
 
 
 Route::post('/formulario', [FormularioController::class, 'formulario'])->name('formulario');

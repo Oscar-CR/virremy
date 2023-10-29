@@ -212,6 +212,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-4 md:pl-20 pr-4 md:pr-20">
                     <!-- Formulario de contacto -->
                     <div class="w-full">
+                    @if (isset($message))
+                        <div class="alert alert-success">
+                            {{ $message }}
+                        </div>
+                    @endif
                         <form method="POST" action="{{ route('formulario') }}" class="p-4">
                             @csrf
 

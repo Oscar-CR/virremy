@@ -2,7 +2,7 @@
 
 # Estimado , {{ $name }}
 
-Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo en contacto con ustedes para obtener más información acerca del servicio de **{{ $cotization }}** que ofrecen. 
+Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo en contacto con usted para brindar más información acerca del servicio de **{{ $cotization }}** que ofrece: 
 
 <br>
 
@@ -69,7 +69,10 @@ Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo e
         Gracias por su tiempo y atención.
 @endswitch
 
+<br>
+Número de seguimiento de solicitud:
 
+### {{ $details }}
 
 <br>
 
