@@ -30,7 +30,7 @@ Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo e
         Cobertura contra Daños Naturales: Sí
         @break
 
-    @case('Seguro de Auto')
+    @case('Seguro de auto')
         Marca y Modelo del Vehículo: Toyota Corolla 2022
         Tipo de Cobertura: Amplia
         Suma Asegurada para Daños a Terceros: 500,000 MXN
@@ -81,7 +81,7 @@ Gracias por su tiempo y atención.
 
 Atentamente, Vianey Oceguera Zepeda
 
-### Accede a nuestro sitio Web
+### Accede a nuestro sitio web
 <br>
 <img src="{{ asset('img/qr-virrey.png') }}" alt="Virremy" width="100" height="120">
 
