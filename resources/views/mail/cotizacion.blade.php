@@ -70,6 +70,7 @@ Espero que se encuentren bien. Mi nombre es Vianey Oceguera Zepeda, y me pongo e
 @endswitch
 
 <br>
+
 Número de seguimiento de solicitud:
 
 ### {{ $details }}
@@ -79,5 +80,10 @@ Número de seguimiento de solicitud:
 Gracias por su tiempo y atención.
 
 Atentamente, Vianey Oceguera Zepeda
+
+### Accede a nuestro sitio Web
+<br>
+<img src="{{ asset('img/qr-virrey.png') }}" alt="Virremy" width="100" height="120">
+
 
 @endcomponent
