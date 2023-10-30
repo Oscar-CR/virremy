@@ -75,6 +75,11 @@ Número de seguimiento de solicitud:
 
 ### {{ $details }}
 
+
+
+<a href="https://wa.me/+525577981941?text=¡Hola%mi%20nombre%20es^%20{{urlencode($name)}}!,%20Me%20interesa%20conocer%20acerca%20de%20{{urlencode($cotization)}}" target="_blank">
+    <button style="background-color: green; color:white; padding:4px;">Enviar mensaje por WhatsApp</button>
+</a>
 <br>
 
 Gracias por su tiempo y atención.
