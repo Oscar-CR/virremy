@@ -68,40 +68,40 @@
         </style>
         <!-- Encabezado Sticky -->
         <header class="fixed top-0 left-0 right-0 z-50 w-full text-white p-4 flex justify-between items-center bg-black bg-opacity-50">
-        <!-- Sección Izquierda -->
-        <div class="left-section">
-            <a href="#" class="text-3xl font-bold">ViRrEmy</a>
-            <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
-        </div>
-        <!-- Sección Derecha -->
-        <div class="right-section">
-            <nav class="md:hidden">
-                <button id="menu-toggle" class="text-white text-3xl" onclick="toggleMobileMenu()">
-                    &#9776;
-                </button>
-            </nav>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-4">
-                    <li><a href="#inicio" class="hover:underline text-2xl ">Inicio</a></li>
-                    <li><a href="#acerca-de" class="hover:underline text-2xl">Acerca de</a></li>
-                    <li><a href="#servicios" class="hover:underline text-2xl">Servicios</a></li>
-                    <li><a href="#exito" class="hover:underline text-2xl">Casos de éxito</a></li>
-                    <li><a href="#contacto" class="hover:underline text-2xl">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <!-- Sección Izquierda -->
+            <div class="left-section">
+                <a href="#" class="text-3xl font-bold">ViRrEmy</a>
+                <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
+            </div>
+            <!-- Sección Derecha -->
+            <div class="right-section">
+                <nav class="md:hidden">
+                    <button id="menu-toggle" class="text-white text-3xl" onclick="toggleMobileMenu()">
+                        &#9776;
+                    </button>
+                </nav>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-4">
+                        <li><a href="#inicio" class="hover:underline text-2xl ">Inicio</a></li>
+                        <li><a href="#acerca-de" class="hover:underline text-2xl">Acerca de</a></li>
+                        <li><a href="#servicios" class="hover:underline text-2xl">Servicios</a></li>
+                        <li><a href="#exito" class="hover:underline text-2xl">Casos de éxito</a></li>
+                        <li><a href="#contacto" class="hover:underline text-2xl">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <nav id="mobile-menu" class=" hidden md:hidden fixed z-50  bg-black bg-opacity-50 w-full" style="margin-top: 68px;">
-        <!-- Contenido del menú en dispositivos móviles -->
-        <ul class="text-white text-2xl p-4 space-y-4">
-            <li><a href="#inicio" class="hover:underline">Inicio</a></li>
-            <li><a href="#acerca-de" class="hover:underline">Acerca de</a></li>
-            <li><a href="#servicios" class="hover:underline">Servicios</a></li>
-            <li><a href="#exito" class="hover:underline">Casos de éxito</a></li>
-            <li><a href="#contacto" class="hover:underline">Contacto</a></li>
-        </ul>
-    </nav>
+        <nav id="mobile-menu" class=" hidden md:hidden fixed z-50  bg-black bg-opacity-50 w-full" style="margin-top: 68px;">
+            <!-- Contenido del menú en dispositivos móviles -->
+            <ul class="text-white text-2xl p-4 space-y-4">
+                <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+                <li><a href="#acerca-de" class="hover:underline">Acerca de</a></li>
+                <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+                <li><a href="#exito" class="hover:underline">Casos de éxito</a></li>
+                <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+            </ul>
+        </nav>
 
     
 
@@ -227,52 +227,40 @@
 
 
         <div id="contacto" class="w-full bg-neutral-800 h-auto">
-            <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Agenda una cita con nosotros!</h2>
+            <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Realiza tu cotización!</h2>
             
             <div class="w-full overflow-x-auto pb-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-4 md:pl-20 pr-4 md:pr-20">
                     <!-- Formulario de contacto -->
-                    <div class="w-full">
-                    @if (isset($message))
-                        <div class="alert alert-success">
-                            {{ $message }}
-                        </div>
-                    @endif
-                        <form method="POST" action="{{ route('formulario') }}" class="p-4">
+                    <div class="w-full"> 
+                        @if (isset($message))
+                            <div class="alert alert-success">
+                                {{ $message }}
+                            </div>
+                        @endif
+                        <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
                             @csrf
 
-                            <div class="mb-4">
-                                <label for="name" class="block text-white text-sm font-bold mb-2 content1">Nombre:</label>
-                                <input type="text" name="name" id="name" class="w-full px-4 py-2 border rounded-lg">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="email" class="block text-white text-sm font-bold mb-2 content1">Correo:</label>
-                                <input type="email" name="email" id="email" class="w-full px-4 py-2 border rounded-lg">
-                            </div>
+                            <p class="text-white text-xl">Por favor, selecciona el servicio para obtener una cotización detallada. Estamos aquí para brindarte información sobre una amplia gama de servicios financieros, desde gastos médicos mayores hasta pólizas de comercio. </p>
                             
-                            <div class="mb-4">
-                                <label for="options" class="block text-white text-sm font-bold mb-2 content1">Selecciona una opción:</label>
-                                <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg">
-                                    <option value="Gastos médicos mayores">Gastos médicos mayores</option>
-                                    <option value="Seguro de vida">Seguro de vida</option>
-                                    <option value="Seguro de hogar">Seguro de hogar</option>
-                                    <option value="Seguro de auto">Seguro de auto</option>
-                                    <option value="Retiro">Retiro</option>
-                                    <option value="Inversión">Inversión</option>
-                                    <option value="Rentas privadas">Rentas privadas</option>
-                                    <option value="Póliza de comercio">Póliza de comercio</option>
-                                </select>
-                            </div>
+                            <p class="text-white text-xl mt-6">Si tienes alguna duda o necesitas asesoramiento adicional, no dudes en ponerte en contacto con nosotros.</p>
 
-                            <div class="mb-4">
-                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Enviar</button>
-                            </div>
+                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
+                                <option value="Gastos médicos mayores">Gastos médicos mayores</option>
+                                <option value="Seguro de vida">Seguro de vida</option>
+                                <option value="Seguro de hogar">Seguro de hogar</option>
+                                <option value="Seguro de auto">Seguro de auto</option>
+                                <option value="Retiro">Retiro</option>
+                                <option value="Inversión">Inversión</option>
+                                <option value="Rentas privadas">Rentas privadas</option>
+                                <option value="Póliza de comercio">Póliza de comercio</option>
+                            </select>
+                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Enviar</button>
                         </form>
                     </div>
 
                     <!-- Información de contacto -->
-                    <div class="w-full flex-col items-center">
+                    <div class="w-full flex-col items-center ">
                         <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.png') }}" alt="persona" class="mx-auto">
                         <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
                         <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesora inmobiliaria</p>
@@ -291,6 +279,5 @@
 
 
         
-
     </body>
 </html>

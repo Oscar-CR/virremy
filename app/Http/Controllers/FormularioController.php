@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Notification;
 class FormularioController extends Controller
 {
 
-    function index() {
+    public function index() {
         return view('welcome');
     }
     public function formulario(Request $request){
@@ -35,4 +35,17 @@ class FormularioController extends Controller
         return redirect()->action([FormularioController::class, 'index'])->with('message', 'Cotización enviada correctamente');
 
     }
+
+    public function cotizacion(Request $request) {
+        
+        $cotizacion = $request->options;
+    
+        if($request->options != null || $request->options != '') {
+            return view('cotizacion', compact('cotizacion'));
+        }
+    
+        return view('cotizacion', compact('cotizacion'));
+    }
+
+
 }
