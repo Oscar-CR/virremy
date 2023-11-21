@@ -460,9 +460,38 @@
                     @default
                         
                 @endswitch
+
+
+                
                     
-                </div>
             </div>
+            <form action="{{ route('formulario', ['cotizacion' => $cotizacion]) }}" method="POST">
+                @csrf
+                <p class="mt-6 font-bold flex justify-center mt-20 text-2xl">¡Contáctanos!</p>
+
+                <div class="w-full p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p>Nombre</p>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"> 
+                    </div>
+                    <div>
+                        <p>Teléfono</p>
+                        <input type="text" name="phone" placeholder="Ingrese su numero de teléfono" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <input type="email" name="email" placeholder="Correo electrónico" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                        @error('email')
+                            <p class="text-red-500 text-xs italic mt-1">Este elemento es requerido</p>
+                        @enderror
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full  bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-md focus:outline-none ml-4">Enviar a mi correo</button>
+
+            </form>
         </div>
 
         <df-messenger

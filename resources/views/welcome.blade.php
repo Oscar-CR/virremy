@@ -255,7 +255,7 @@
                                 <option value="Rentas privadas">Rentas privadas</option>
                                 <option value="Póliza de comercio">Póliza de comercio</option>
                             </select>
-                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Enviar</button>
+                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
                         </form>
                     </div>
 
