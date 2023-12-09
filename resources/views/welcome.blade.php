@@ -180,7 +180,7 @@
                             <div class="w-full md:w-1/2 rounded-lg mb-2 md:mb-0">
                                 <img class="w-full pr-4" src="{{asset('/img/people1.png')}} " alt="" style="height: 400px; object-fit:cover;">
                             </div>
-                            <div class="w-full md:w-1/2 rounded-lg text-white text-2xl content2">
+                            <div class="w-full md:w-1/2 rounded-lg text-white text-xl content2">
                                 María, una cliente de largo plazo, experimentó un evento desafortunado cuando su casa fue dañada por un incendio. Gracias a la rápida respuesta y el apoyo de nuestro equipo, María pudo presentar una reclamación y recibir una compensación justa para reconstruir su hogar. Nuestra póliza de seguro del hogar no solo la protegió económicamente, sino que también le brindó paz mental en un momento difícil.
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                             <div class="w-full md:w-1/2 rounded-lg mb-2 md:mb-0">
                                 <img src="{{asset('/img/people2.png')}}" alt="persona" class="w-full pr-4" style="height: 400px; object-fit:cover;">
                             </div>
-                            <div class="w-full md:w-1/2 rounded-lg text-white text-2xl content2">
+                            <div class="w-full md:w-1/2 rounded-lg text-white text-xl content2">
                                 Javier y Carla, una pareja que se acercaba a la jubilación, recurrieron a nosotros en busca de ayuda para planificar su retiro. Trabajamos juntos para establecer un plan financiero sólido que les permitió jubilarse cómodamente y cumplir con sus metas de viaje y tiempo libre. Hoy en día, disfrutan de una jubilación feliz y sin preocupaciones.
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                             <div class="w-full md:w-1/2 rounded-lg mb-2 md:mb-0">
                                 <img src="{{asset('/img/people3.jpg')}}" alt="persona" class="rounded h-full w-full object-cover pr-4" style="height: 400px; object-fit:cover;">
                             </div>
-                            <div class="w-full md:w-1/2 rounded-lg text-white text-2xl content2">
+                            <div class="w-full md:w-1/2 rounded-lg text-white text-xl content2">
                                 Roberto, un hombre que se acerca a la jubilación, utilizó nuestros servicios de planificación financiera para asegurarse de que su retiro fuera tranquilo. Con un plan de jubilación bien estructurado, Roberto tiene la seguridad de que podrá disfrutar de su jubilación con el estilo de vida que siempre soñó, sin preocupaciones financieras.
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                             <div class="w-full md:w-1/2 rounded-lg mb-2 md:mb-0">
                                 <img src="{{asset('/img/people4.jpg')}}" alt="persona" class="rounded-lg h-full w-full object-cover pr-4" style="height: 400px; object-fit:cover;">
                             </div>
-                            <div class="w-full md:w-1/2 rounded-lg text-white text-2xl content2">
+                            <div class="w-full md:w-1/2 rounded-lg text-white text-xl content2">
                                 Luis, un dueño de un pequeño negocio, se benefició de nuestro seguro de ingresos para empresarios cuando su empresa tuvo que cerrar temporalmente debido a una situación inesperada. La póliza le proporcionó un flujo de ingresos que le permitió mantener sus operaciones y evitar dificultades financieras durante el cierre temporal.
                             </div>
                         </div>
@@ -226,12 +226,12 @@
         </div>
 
 
-        <div id="contacto" class="w-full bg-neutral-800 h-auto">
+       <!--  <div id="contacto" class="w-full bg-neutral-800 h-auto">
             <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Realiza tu cotización!</h2>
             
             <div class="w-full overflow-x-auto pb-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-4 md:pl-20 pr-4 md:pr-20">
-                    <!-- Formulario de contacto -->
+                   
                     <div class="w-full"> 
                         @if (isset($message))
                             <div class="alert alert-success">
@@ -259,7 +259,7 @@
                         </form>
                     </div>
 
-                    <!-- Información de contacto -->
+                 
                     <div class="w-full flex-col items-center ">
                         <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.png') }}" alt="persona" class="mx-auto">
                         <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
@@ -267,14 +267,74 @@
                         <p class="text-center text-gray-300 text-xl mt-2 content1">55 5555 5555  mail@mail.com</p>
                     </div>
                 </div>
+            </div> -->
+
+            <div id="contacto" class="w-full bg-neutral-800 h-auto">
+            <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Contáctanos!</h2>
+            
+            <div class="w-full overflow-x-auto pb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-4 md:pl-20 pr-4 md:pr-20">
+                   
+                    <div class="w-full"> 
+                        @if (isset($message))
+                            <div class="alert alert-success">
+                                {{ $message }}
+                            </div>
+                        @endif
+
+                        <p class="text-white text-xl mt-10">Nuestros asesores expertos te ofrecen un abanico de servicios diseñados específicamente para cubrir tus necesidades individuales. Más que ofrecerte productos, se centran en comprender tus prioridades y proporcionarte un asesoramiento detallado. Resuelve tus dudas y diseña un plan de seguridad que se ajuste perfectamente a tu estilo de vida.</p>
+                            
+<!--                         <p class="text-white text-xl mt-6">Si tienes alguna duda o necesitas asesoramiento adicional, no dudes en ponerte en contacto con nosotros.</p>
+ -->                        
+
+
+                        <!-- <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
+                            @csrf
+                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
+                                <option value="Gastos médicos mayores">Gastos médicos mayores</option>
+                                <option value="Seguro de vida">Seguro de vida</option>
+                                <option value="Seguro de hogar">Seguro de hogar</option>
+                                <option value="Seguro de auto">Seguro de auto</option>
+                                <option value="Retiro">Retiro</option>
+                                <option value="Inversión">Inversión</option>
+                                <option value="Rentas privadas">Rentas privadas</option>
+                                <option value="Póliza de comercio">Póliza de comercio</option>
+                            </select>
+                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
+                        </form> -->
+                    </div>
+
+                 
+                    <div class="w-full flex-col items-center ">
+                        <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.png') }}" alt="persona" class="mx-auto">
+                        <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
+                        <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesora inmobiliaria</p>
+                        <p class="text-center text-gray-300 text-xl mt-2 content1">55 7798 1941  vianey.vireemy@gmail.com</p>
+                    </div>
+                </div>
             </div>
 
-            <df-messenger
+           <!--  <df-messenger
             intent="WELCOME"
             chat-title="NewAgent"
             agent-id="fd268007-098c-4fa5-ad7a-076de917d1f9"
             language-code="es"
-            ></df-messenger>
+            ></df-messenger> -->
+
+            <a href="https://api.whatsapp.com/send?phone=5577981941" class="fixed bottom-4 right-4 p-4 bg-green-500 text-white rounded-full shadow-lg">
+                <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"/>
+                    <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"/>
+                    <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5BD066"/>
+                    <stop offset="1" stop-color="#27B43E"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </a>
         </div>
 
 
