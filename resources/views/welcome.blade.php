@@ -6,7 +6,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
 
-        <title>Virremy</title>
+        <title>Vireemy</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
         <header class="fixed top-0 left-0 right-0 z-50 w-full text-white p-4 flex justify-between items-center bg-black bg-opacity-50">
             <!-- Sección Izquierda -->
             <div class="left-section">
-                <a href="#" class="text-3xl font-bold">ViRrEmy</a>
+                <a href="#" class="text-3xl font-bold">Vireemy</a>
                 <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
             </div>
             <!-- Sección Derecha -->
@@ -288,10 +288,26 @@
  -->                        
 
 
-                        <!-- <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
+                        <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
                             @csrf
                             <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
-                                <option value="Gastos médicos mayores">Gastos médicos mayores</option>
+                                <option value="OptiMaxxplus">OptiMaxx plus plan de ahorri para tu retiro</option>
+                                <option value="OptiMaxxprotección">OptiMaxx protección, seguro de vida</option>
+                                <option value="AllianzAuto">Allianz Auto, seguro de auto</option>
+                                <option value="AllianzResidencial">Allianz Residencial, seguro de hogar</option>
+                            </select>
+                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
+                        </form> 
+
+                        <!-- <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
+                            @csrf
+
+                            <p class="text-white text-xl">Por favor, selecciona el servicio para obtener una cotización detallada. Estamos aquí para brindarte información sobre una amplia gama de servicios financieros, desde gastos médicos mayores hasta pólizas de comercio. </p>
+                            
+                            <p class="text-white text-xl mt-6">Cotiza nuestros servicios</p>
+
+                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
+                                <option value="Gastos médicos mayores">Optimaxx plus</option>
                                 <option value="Seguro de vida">Seguro de vida</option>
                                 <option value="Seguro de hogar">Seguro de hogar</option>
                                 <option value="Seguro de auto">Seguro de auto</option>
@@ -306,10 +322,10 @@
 
                  
                     <div class="w-full flex-col items-center ">
-                        <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.png') }}" alt="persona" class="mx-auto">
+                        <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.jpg') }}" alt="persona" class="mx-auto">
                         <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
-                        <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesora inmobiliaria</p>
-                        <p class="text-center text-gray-300 text-xl mt-2 content1">55 7798 1941  vianey.vireemy@gmail.com</p>
+                        <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesor Financiero Certificado</p>
+                        <p class="text-center text-gray-300 text-xl mt-2 content1">55 7798 1941 vireemy@ogdigitalsolutions.com.mx</p>
                     </div>
                 </div>
             </div>
@@ -321,7 +337,7 @@
             language-code="es"
             ></df-messenger> -->
 
-            <a href="https://api.whatsapp.com/send?phone=5577981941" class="fixed bottom-4 right-4 p-4 bg-green-500 text-white rounded-full shadow-lg">
+            <a href="https://api.whatsapp.com/send?phone=5611875303" class="fixed bottom-4 right-4 p-4 bg-green-500 text-white rounded-full shadow-lg">
                 <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"/>
                     <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"/>

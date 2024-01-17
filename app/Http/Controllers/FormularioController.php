@@ -20,7 +20,7 @@ class FormularioController extends Controller
         ]);
     
         $correoDestino = $request->email;
-        
+        $correoLocal = 'vireemy@ogdigitalsolutions.com.mx';
         $createCotization = new Cotization();
         $createCotization->reference = uniqid();
         $createCotization->name = $request->name;
@@ -30,6 +30,9 @@ class FormularioController extends Controller
         $createCotization->save();
     
         Notification::route('mail', $correoDestino)
+            ->notify(new Cotizacion($request->name, $request->cotizacion,  $createCotization->reference ));
+
+            Notification::route('mail', $correoLocal)
             ->notify(new Cotizacion($request->name, $request->cotizacion,  $createCotization->reference ));
     
         return redirect()->action([FormularioController::class, 'index'])->with('message', 'Cotización enviada correctamente');

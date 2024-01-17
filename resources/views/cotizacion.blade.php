@@ -110,54 +110,13 @@
                 <div class="flex justify-center">
 
                 @switch($cotizacion)
-                    @case('Gastos médicos mayores')
+                    @case('OptiMaxxplus')
                         
-                        <!-- Columna 1 -->
-                        <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                            <h2 class="text-2xl font-bold mb-4">Nivel Básico de Inversión</h2>
-                            <p><strong>Plan de Seguro:</strong> Plan Básico de Gastos Médicos Mayores</p>
-                            <p><strong>Inversión Mensual:</strong> $500 MXN</p>
-                            <p><strong>Cobertura y Ventajas:</strong></p>
-                            <ul class="list-disc ml-6">
-                                <li>Cobertura de hospitalización por accidente y enfermedad hasta $100,000 MXN anuales.</li>
-                                <li>Consultas médicas ambulatorias con copago de $200 MXN por visita.</li>
-                                <li>Medicamentos con descuento en farmacias afiliadas.</li>
-                                <li>Acceso a red de hospitales y clínicas básicas.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Columna 2 -->
-                        <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                            <h2 class="text-2xl font-bold mb-4">Nivel Intermedio de Inversión</h2>
-                            <p><strong>Plan de Seguro:</strong> Gastos Médicos Mayores Plus</p>
-                            <p><strong>Inversión Mensual:</strong> $1,500 MXN</p>
-                            <p><strong>Cobertura y Ventajas:</strong></p>
-                            <ul class="list-disc ml-6">
-                                <li>Cobertura ampliada de hospitalización por accidente y enfermedad hasta $500,000 MXN anuales.</li>
-                                <li>Consultas médicas ambulatorias sin copago.</li>
-                                <li>Reembolso de medicamentos recetados.</li>
-                                <li>Acceso a una red más extensa de hospitales y clínicas, incluyendo especialidades.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Columna 3 -->
-                        <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                            <h2 class="text-2xl font-bold mb-4">Nivel Premium de Inversión</h2>
-                            <p><strong>Plan de Seguro:</strong> Gastos Médicos Mayores Platinum</p>
-                            <p><strong>Inversión Mensual:</strong> $3,000 MXN</p>
-                            <p><strong>Cobertura y Ventajas:</strong></p>
-                            <ul class="list-disc ml-6">
-                                <li>Cobertura máxima de hospitalización por accidente y enfermedad hasta $1,000,000 MXN anuales.</li>
-                                <li>Consultas médicas ambulatorias y hospitalización sin costos adicionales.</li>
-                                <li>Amplio reembolso de medicamentos, incluyendo tratamientos especializados.</li>
-                                <li>Acceso preferencial a los mejores hospitales y especialistas a nivel nacional e internacional.</li>
-                            </ul>
-                        </div>
-
+                        <h3>Hola !</h3>
 
                         @break
 
-                    @case('Seguro de vida')
+                    @case('OptiMaxxprotección')
                         <div class="flex justify-center">
                             <!-- Columna 1 -->
                             <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
@@ -200,7 +159,7 @@
                         </div>
                         @break
 
-                    @case('Seguro de hogar')
+                    @case('AllianzAuto')
 
                         <div class="flex justify-center">
                             <!-- Columna 1 -->
@@ -245,7 +204,7 @@
 
                         @break
 
-                    @case('Seguro de auto')
+                    @case('AllianzResidencial')
                         <div class="flex justify-center">
                             <!-- Columna 1 -->
                             <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
@@ -286,175 +245,6 @@
                                 </ul>
                             </div>
                         </div>
-                        @break
-
-                    @case('Retiro')
-                        <div class="flex justify-center">
-                            <!-- Columna 1 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Básico de Inversión</h2>
-                                <p><strong>Tipo de Plan:</strong> Plan de Ahorro para el Retiro Básico</p>
-                                <p><strong>Inversión Mensual:</strong> $1,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Contribuciones regulares para el retiro con rendimientos moderados.</li>
-                                    <li>Crecimiento del fondo con base en inversiones seguras y de bajo riesgo.</li>
-                                    <li>Beneficios fiscales por aportaciones al fondo de retiro.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Columna 2 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Intermedio de Inversión</h2>
-                                <p><strong>Tipo de Plan:</strong> Plan de Ahorro para el Retiro Plus</p>
-                                <p><strong>Inversión Mensual:</strong> $3,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Mayor contribución mensual para un crecimiento más acelerado del fondo de retiro.</li>
-                                    <li>Opciones de inversión más variadas que incluyen fondos mixtos y de renta variable.</li>
-                                    <li>Posibilidad de ajustar las inversiones según las condiciones del mercado.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Columna 3 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Premium de Inversión</h2>
-                                <p><strong>Tipo de Plan:</strong> Plan de Ahorro para el Retiro Premium</p>
-                                <p><strong>Inversión Mensual:</strong> $7,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Alta contribución mensual para un crecimiento agresivo del fondo de retiro.</li>
-                                    <li>Acceso a una gama completa de opciones de inversión, incluyendo fondos de alto rendimiento y diversificación internacional.</li>
-                                    <li>Flexibilidad para realizar aportaciones adicionales y ajustar estrategias de inversión según el perfil de riesgo.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        @break
-
-                    @case('Inversión')
-                        <div class="flex justify-center">
-                            <!-- Columna 1 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Conservador</h2>
-                                <p><strong>Tipo de Inversión:</strong> Certificados de Depósito a Plazo (CDP) y Bonos Gubernamentales</p>
-                                <p><strong>Inversión Mensual:</strong> $5,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Inversión en CDP con tasas de interés fijas y plazos cortos.</li>
-                                    <li>Bonos gubernamentales de bajo riesgo y rendimientos estables.</li>
-                                    <li>Protección del capital invertido, pero con rendimientos moderados.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Columna 2 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Moderado</h2>
-                                <p><strong>Tipo de Inversión:</strong> Fondos de Inversión Diversificados</p>
-                                <p><strong>Inversión Mensual:</strong> $10,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Inversión en fondos diversificados que incluyen acciones, bonos y otros activos.</li>
-                                    <li>Mayor potencial de crecimiento que los instrumentos de bajo riesgo.</li>
-                                    <li>Riesgo moderado, ya que se diversifica la inversión en diferentes clases de activos.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Columna 3 -->
-                            <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                <h2 class="text-2xl font-bold mb-4">Nivel Agresivo</h2>
-                                <p><strong>Tipo de Inversión:</strong> Acciones y Mercado de Valores</p>
-                                <p><strong>Inversión Mensual:</strong> $20,000 MXN</p>
-                                <p><strong>Características y Ventajas:</strong></p>
-                                <ul class="list-disc ml-6">
-                                    <li>Inversión directa en acciones de empresas seleccionadas o a través de fondos de inversión de renta variable.</li>
-                                    <li>Mayor potencial de rendimiento, pero con mayor volatilidad y riesgo.</li>
-                                    <li>Posibilidad de obtener beneficios significativos a largo plazo.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        @break
-
-                    @case('Rentas privadas')
-                            <div class="flex justify-center">
-                                <!-- Columna 1 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Propiedad Residencial Pequeña</h2>
-                                    <p><strong>Tipo de Inversión:</strong> Casa o Departamento Pequeño en Zona Urbana</p>
-                                    <p><strong>Inversión Inicial:</strong> $1,000,000 MXN (Compra del inmueble)</p>
-                                    <p><strong>Renta Mensual Estimada:</strong> $8,000 MXN</p>
-                                    <p><strong>Características y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Inversión inicial modesta con rendimientos mensuales estables pero limitados.</li>
-                                        <li>Menor riesgo de vacancia debido a la alta demanda de viviendas en áreas urbanas.</li>
-                                    </ul>
-                                </div>
-
-                                <!-- Columna 2 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Propiedad Comercial</h2>
-                                    <p><strong>Tipo de Inversión:</strong> Local Comercial en Zona Comercial</p>
-                                    <p><strong>Inversión Inicial:</strong> $3,000,000 MXN (Compra del inmueble)</p>
-                                    <p><strong>Renta Mensual Estimada:</strong> $25,000 MXN</p>
-                                    <p><strong>Características y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Mayor inversión inicial con rendimientos mensuales más altos.</li>
-                                        <li>Riesgo moderado debido a la estabilidad de los negocios en zonas comerciales consolidadas.</li>
-                                    </ul>
-                                </div>
-
-                                <!-- Columna 3 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Inversión Inmobiliaria a Gran Escala</h2>
-                                    <p><strong>Tipo de Inversión:</strong> Edificio de Apartamentos o Condominios</p>
-                                    <p><strong>Inversión Inicial:</strong> $20,000,000 MXN (Compra del inmueble)</p>
-                                    <p><strong>Renta Mensual Estimada:</strong> $200,000 MXN</p>
-                                    <p><strong>Características y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Gran inversión inicial con rendimientos mensuales significativos.</li>
-                                        <li>Mayor complejidad en la gestión y mantenimiento, pero potencial para mayores retornos a largo plazo.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        @break
-
-                    @case('Póliza de comercio')
-                            <div class="flex justify-center">
-                                <!-- Columna 1 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Póliza Básica de Comercio</h2>
-                                    <p><strong>Tipo de Cobertura:</strong> Póliza Básica para Pequeños Negocios</p>
-                                    <p><strong>Cobertura y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Protección contra incendios, inundaciones y daños estructurales básicos.</li>
-                                        <li>Responsabilidad civil por daños a terceros dentro del negocio.</li>
-                                        <li>Cobertura limitada para equipos y mercancías.</li>
-                                    </ul>
-                                </div>
-
-                                <!-- Columna 2 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Póliza de Comercio Ampliada</h2>
-                                    <p><strong>Tipo de Cobertura:</strong> Póliza Ampliada para Medianas Empresas</p>
-                                    <p><strong>Cobertura y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Protección extensa contra incendios, daños por fenómenos naturales y robo.</li>
-                                        <li>Responsabilidad civil ampliada, incluyendo indemnización por lesiones a empleados.</li>
-                                        <li>Cobertura más amplia para equipos, inventario y pérdida de ingresos por interrupción del negocio.</li>
-                                    </ul>
-                                </div>
-
-                                <!-- Columna 3 -->
-                                <div class="bg-white p-6 m-4 rounded-lg shadow-lg">
-                                    <h2 class="text-2xl font-bold mb-4">Póliza de Comercio Premium</h2>
-                                    <p><strong>Tipo de Cobertura:</strong> Póliza Premium para Grandes Corporaciones</p>
-                                    <p><strong>Cobertura y Ventajas:</strong></p>
-                                    <ul class="list-disc ml-6">
-                                        <li>Cobertura integral contra múltiples riesgos, incluyendo ciberataques, terrorismo y eventos catastróficos.</li>
-                                        <li>Responsabilidad civil extensa, incluyendo defensa legal y compensaciones elevadas.</li>
-                                        <li>Cobertura ampliada para equipos, inventario, pérdida de ingresos y protección internacional.</li>
-                                    </ul>
-                                </div>
-                            </div>
                         @break
                         
                     @default
