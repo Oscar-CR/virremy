@@ -25,15 +25,15 @@ class FormularioController extends Controller
         $createCotization->reference = uniqid();
         $createCotization->name = $request->name;
         $createCotization->email = $request->email;
-        $createCotization->type = $request->cotizacion;
-        $createCotization->details = '';
+        $createCotization->type = $request->options;
+        $createCotization->details = $request->details;
         $createCotization->save();
     
         Notification::route('mail', $correoDestino)
-            ->notify(new Cotizacion($request->name, $request->cotizacion,  $createCotization->reference ));
+            ->notify(new Cotizacion($request->name, $request->options,  $createCotization->reference ));
 
             Notification::route('mail', $correoLocal)
-            ->notify(new Cotizacion($request->name, $request->cotizacion,  $createCotization->reference ));
+            ->notify(new Cotizacion($request->name, $request->options,  $createCotization->reference ));
     
         return redirect()->action([FormularioController::class, 'index'])->with('message', 'Cotización enviada correctamente');
 

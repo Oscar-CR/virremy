@@ -6,7 +6,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
 
-        <title>Vireemy</title>
+        <title>ViReEmy</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
         <header class="fixed top-0 left-0 right-0 z-50 w-full text-white p-4 flex justify-between items-center bg-black bg-opacity-50">
             <!-- Sección Izquierda -->
             <div class="left-section">
-                <a href="#" class="text-3xl font-bold">Vireemy</a>
+                <a href="#" class="text-3xl font-bold">ViReEmy</a>
                 <p class="hidden md:block">Soluciones Financieras para tu Patrimonio</p>
             </div>
             <!-- Sección Derecha -->
@@ -225,50 +225,6 @@
             </div>
         </div>
 
-
-       <!--  <div id="contacto" class="w-full bg-neutral-800 h-auto">
-            <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Realiza tu cotización!</h2>
-            
-            <div class="w-full overflow-x-auto pb-20">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pl-4 md:pl-20 pr-4 md:pr-20">
-                   
-                    <div class="w-full"> 
-                        @if (isset($message))
-                            <div class="alert alert-success">
-                                {{ $message }}
-                            </div>
-                        @endif
-                        <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
-                            @csrf
-
-                            <p class="text-white text-xl">Por favor, selecciona el servicio para obtener una cotización detallada. Estamos aquí para brindarte información sobre una amplia gama de servicios financieros, desde gastos médicos mayores hasta pólizas de comercio. </p>
-                            
-                            <p class="text-white text-xl mt-6">Si tienes alguna duda o necesitas asesoramiento adicional, no dudes en ponerte en contacto con nosotros.</p>
-
-                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
-                                <option value="Gastos médicos mayores">Gastos médicos mayores</option>
-                                <option value="Seguro de vida">Seguro de vida</option>
-                                <option value="Seguro de hogar">Seguro de hogar</option>
-                                <option value="Seguro de auto">Seguro de auto</option>
-                                <option value="Retiro">Retiro</option>
-                                <option value="Inversión">Inversión</option>
-                                <option value="Rentas privadas">Rentas privadas</option>
-                                <option value="Póliza de comercio">Póliza de comercio</option>
-                            </select>
-                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
-                        </form>
-                    </div>
-
-                 
-                    <div class="w-full flex-col items-center ">
-                        <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.png') }}" alt="persona" class="mx-auto">
-                        <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
-                        <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesora inmobiliaria</p>
-                        <p class="text-center text-gray-300 text-xl mt-2 content1">55 5555 5555  mail@mail.com</p>
-                    </div>
-                </div>
-            </div> -->
-
             <div id="contacto" class="w-full bg-neutral-800 h-auto">
             <h2 class="text-white text-5xl md:text-6xl pl-4 md:pl-20 pt-6 md:pt-20 font-bold subtitle1 pb-4">¡Contáctanos!</h2>
             
@@ -284,13 +240,20 @@
 
                         <p class="text-white text-xl mt-10">Nuestros asesores expertos te ofrecen un abanico de servicios diseñados específicamente para cubrir tus necesidades individuales. Más que ofrecerte productos, se centran en comprender tus prioridades y proporcionarte un asesoramiento detallado. Resuelve tus dudas y diseña un plan de seguridad que se ajuste perfectamente a tu estilo de vida.</p>
                             
-<!--                         <p class="text-white text-xl mt-6">Si tienes alguna duda o necesitas asesoramiento adicional, no dudes en ponerte en contacto con nosotros.</p>
- -->                        
-
-
-                        <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
+                        <form id="myForm" action="{{ route('formulario') }}" method="POST" class="mt-6">
                             @csrf
-                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
+
+                            <label for="email" class="text-white">Correo electrónico:</label>
+                            <input type="email" name="email" id="email" class="w-full px-4 py-2 border rounded-lg" placeholder="Ingrese su correo electrónico" required>
+                            <br><br>
+                            <label for="name" class="text-white">Nombre:</label>
+                            <input type="text" name="name" id="name" class="w-full px-4 py-2 border rounded-lg" placeholder="Ingrese su nombre" required>
+                            <br><br>
+                            <label for="details" class="text-white">Teléfono:</label>
+                            <input type="text" name="details" id="details" class="w-full px-4 py-2 border rounded-lg" placeholder="Ingrese su teléfono" required>
+                            <br><br>
+                            <label for="details" class="text-white">Opción:</label>
+                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg">
                                 <option value="OptiMaxxplus">OptiMaxx plus plan de ahorri para tu retiro</option>
                                 <option value="OptiMaxxprotección">OptiMaxx protección, seguro de vida</option>
                                 <option value="AllianzAuto">Allianz Auto, seguro de auto</option>
@@ -298,44 +261,16 @@
                             </select>
                             <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
                         </form> 
-
-                        <!-- <form id="myForm" action="{{ route('cotizacion') }}" method="POST">
-                            @csrf
-
-                            <p class="text-white text-xl">Por favor, selecciona el servicio para obtener una cotización detallada. Estamos aquí para brindarte información sobre una amplia gama de servicios financieros, desde gastos médicos mayores hasta pólizas de comercio. </p>
-                            
-                            <p class="text-white text-xl mt-6">Cotiza nuestros servicios</p>
-
-                            <select name="options" id="options" class="w-full px-4 py-2 border rounded-lg mt-12">
-                                <option value="Gastos médicos mayores">Optimaxx plus</option>
-                                <option value="Seguro de vida">Seguro de vida</option>
-                                <option value="Seguro de hogar">Seguro de hogar</option>
-                                <option value="Seguro de auto">Seguro de auto</option>
-                                <option value="Retiro">Retiro</option>
-                                <option value="Inversión">Inversión</option>
-                                <option value="Rentas privadas">Rentas privadas</option>
-                                <option value="Póliza de comercio">Póliza de comercio</option>
-                            </select>
-                            <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mt-6">Cotizar</button>
-                        </form> -->
                     </div>
-
                  
                     <div class="w-full flex-col items-center ">
                         <img style="width: 350px; height: 450px; object-fit: cover;" src="{{ asset('/img/vianey.jpg') }}" alt="persona" class="mx-auto">
                         <p class="text-center text-white text-2xl font-bold mt-2 content1">Vianey Oceguera Zepeda</p>
                         <p class="text-center text-gray-300 text-xl font-semibold mt-2 content1">Asesor Financiero Certificado</p>
-                        <p class="text-center text-gray-300 text-xl mt-2 content1">55 7798 1941 vireemy@ogdigitalsolutions.com.mx</p>
+                        <p class="text-center text-gray-300 text-xl mt-2 content1">56 1187 5303 vireemy@ogdigitalsolutions.com.mx</p>
                     </div>
                 </div>
             </div>
-
-           <!--  <df-messenger
-            intent="WELCOME"
-            chat-title="NewAgent"
-            agent-id="fd268007-098c-4fa5-ad7a-076de917d1f9"
-            language-code="es"
-            ></df-messenger> -->
 
             <a href="https://api.whatsapp.com/send?phone=5611875303" class="fixed bottom-4 right-4 p-4 bg-green-500 text-white rounded-full shadow-lg">
                 <svg width="40px" height="40px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

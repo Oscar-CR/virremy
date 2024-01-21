@@ -52,7 +52,7 @@ class Cotizacion extends Notification
             'details' => $this->details,
         ])
         ->subject('Cotización')
-        ->from('contacto@amatuspies.com', 'Cotización');
+        ->from('vireemy@ogdigitalsolutions.com.mx', 'Cotización');
     }   
 
     /**
