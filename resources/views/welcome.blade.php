@@ -411,14 +411,14 @@
                 <label for="options" class="block text-sm font-semibold text-gray-600 mb-1">Tipo de Seguro</label>
                 <select id="options" name="options" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
                     <option value="" disabled selected>Seleccione un tipo de seguro</option>
-                    <option value="gastosMedicosMayores">Gastos Médicos Mayores</option>
-                    <option value="seguroVida">Seguro de Vida</option>
-                    <option value="seguroHogar">Seguro de Hogar</option>
-                    <option value="seguroAuto">Seguro de Auto</option>
-                    <option value="retiro">Retiro</option>
-                    <option value="inversion">Inversión</option>
-                    <option value="rentasPrivadas">Rentas Privadas</option>
-                    <option value="polizaComercio">Póliza de Comercio</option>
+                    <option value="Gastos Medicos Mayores">Gastos Médicos Mayores</option>
+                    <option value="Seguro de Vida">Seguro de Vida</option>
+                    <option value="Seguro de Hogar">Seguro de Hogar</option>
+                    <option value="Seguro de Auto">Seguro de Auto</option>
+                    <option value="Retiro">Retiro</option>
+                    <option value="Inversion">Inversión</option>
+                    <option value="Rentas Privadas">Rentas Privadas</option>
+                    <option value="Poliza de Comercio">Póliza de Comercio</option>
                 </select>
             </div>
 
