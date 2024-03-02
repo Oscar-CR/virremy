@@ -370,9 +370,11 @@
 
                 <p class="font-semibold text-center md:text-left" style="font-size: 30px;">¡Ponte en contacto con nuestros expertos, te llevarán de la mano para elegir un plan que se adapte a tus necesidades!.</p>
                 
-                <div class="text-center md:text-right">
+                <div class="text-center md:text-center">
                     <img src="./img/asesor.png" alt="">
-                    <p style="color: #4F005B; font-size: 24px;" class="font-semibold mt-5 md:mt-10">Asesor Financiero Certificado</p>
+                    <p style="color: #4F005B; font-size: 24px;" class="font-semibold mt-5 md:mt-2">Vianey Oceguera Zepeda</p>
+                    <p style="color: #4F005B; font-size: 16px;" class="font-semibold mt-5 md:mt-2">Asesor Financiero Certificado</p>
+                    <p style="color: #4F005B; font-size: 16px;" class="font-semibold mt-5 md:mt-2">56 1187 5303 vireemy@ogdigitalsolutions.com.mx</p>
                 </div>
                 
             </div>
