@@ -381,12 +381,80 @@
     </div>
 
 
+
+
+
+    <div id="testimonial-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <figure class="max-w-screen-md mx-auto text-center">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <blockquote>
+                        <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"María, una cliente de largo plazo, experimentó un evento desafortunado cuando su casa fue dañada por un incendio. Gracias a la rápida respuesta y el apoyo de nuestro equipo, María pudo presentar una reclamación y recibir una compensación justa para reconstruir su hogar. Nuestra póliza de seguro del hogar no solo la protegió económicamente, sino que también le brindó paz mental en un momento difícil."</p>
+                    </blockquote>
+                </figure>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <figure class="max-w-screen-md mx-auto text-center">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <blockquote>
+                        <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Javier y Carla, una pareja que se acercaba a la jubilación, recurrieron a nosotros en busca de ayuda para planificar su retiro. Trabajamos juntos para establecer un plan financiero sólido que les permitió jubilarse cómodamente y cumplir con sus metas de viaje y tiempo libre. Hoy en día, disfrutan de una jubilación feliz y sin preocupaciones."</p>
+                    </blockquote>
+                </figure>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <figure class="max-w-screen-md mx-auto text-center">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <blockquote>
+                        <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Roberto, un hombre que se acerca a la jubilación, utilizó nuestros servicios de planificación financiera para asegurarse de que su retiro fuera tranquilo. Con un plan de jubilación bien estructurado, Roberto tiene la seguridad de que podrá disfrutar de su jubilación con el estilo de vida que siempre soñó, sin preocupaciones financieras."</p>
+                    </blockquote>
+                </figure>
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <figure class="max-w-screen-md mx-auto text-center">
+                    <<svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <blockquote>
+                        <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Luis, un dueño de un pequeño negocio, se benefició de nuestro seguro de ingresos para empresarios cuando su empresa tuvo que cerrar temporalmente debido a una situación inesperada. La póliza le proporcionó un flujo de ingresos que le permitió mantener sus operaciones y evitar dificultades financieras durante el cierre temporal."</p>
+                    </blockquote>
+                </figure>
+            </div>
+        
+        </div>
+
+
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Testimonio 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Testimonio 2" data-carousel-slide-to="1"></button>
+        
+        </div>
+
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        
+        </button>
+
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        
+        </button>
+    </div>
+
+
     <div class="contenedor mx-auto mt-8" id="contacto"  style="padding:  5% 15% 5% 15%;">
   
         <form id="myForm" action="{{ route('formulario') }}" method="POST" class="bg-white p-8 rounded shadow-lg">
             @csrf
         
-            <h2 class="text-2xl font-bold mb-6 mb-10" style="color: #4F005B; font-size: 30px;">Ponte en contacto con nosotros</h2>
+            <h2 class="text-2xl font-bold mb-6 mb-10" style="color: #4F005B; font-size: 30px;">Cotizar</h2>
 
             <!-- Nombre -->
             <div class="mb-4">
@@ -429,7 +497,9 @@
         </form>
     </div>
     <script>
+        
         document.addEventListener("DOMContentLoaded", function () {
+
             const container = document.body;
             const numCircles = 60;
             const circles = [];
