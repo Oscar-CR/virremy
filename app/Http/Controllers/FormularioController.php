@@ -50,5 +50,9 @@ class FormularioController extends Controller
         return view('cotizacion', compact('cotizacion'));
     }
 
+    public function privacidad()  {
+        return view('privacidad');
+    }
+
 
 }

@@ -21,4 +21,5 @@ Route::get('/', [FormularioController::class, 'index'])->name('index');
 Route::post('/formulario', [FormularioController::class, 'formulario'])->name('formulario');
 
 Route::post('/cotizacion', [FormularioController::class, 'cotizacion'])->name('cotizacion');
+Route::get('/privacidad', [FormularioController::class, 'privacidad'])->name('privacidad');
 
