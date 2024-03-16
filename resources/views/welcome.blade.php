@@ -367,8 +367,10 @@
         </div>
         <div class="container mx-auto mt-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <p class="font-semibold text-center md:text-left" style="font-size: 30px;">¡Ponte en contacto con nuestros expertos, te llevarán de la mano para elegir un plan que se adapte a tus necesidades!.</p>
+                <div class="flex flex-col items-center">
+                    <p class="font-semibold text-center md:text-left" style="font-size: 30px;">¡Ponte en contacto con nuestros expertos, te llevarán de la mano para elegir un plan que se adapte a tus necesidades!.</p>
+                    <img src="{{asset('img/certificado.png')}}" alt="cetificado" style="width: 200px; margin-top:80px;">
+                </div>
                 
                 <div class="text-center md:text-center">
                     <img src="./img/asesor.png" alt="">
@@ -581,9 +583,9 @@
         </svg>
     </a>
 
-    <footer class="bg-gray-800 text-white p-4 text-center flex justify-between pb-10">
+    <footer class="bg-gray-800 text-white p-4 text-center flex flex-col md:flex-row md:justify-between md:items-center pb-10">
         <p>&copy; Virremy 2024</p>
-        <a  href="{{ route('privacidad')}}" class="text-gray-300">Aviso de Privacidad</a>
+        <a href="{{ route('privacidad')}}" class="text-gray-300">Aviso de Privacidad</a>
         <p> Desarrollador por <b> OG Digital Solutions®️ </b> </p>
 
         <div id="default-modal-9" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
