@@ -27,8 +27,36 @@
 
         }
 
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 9999;
+            display: none; /* Inicialmente oculto */
+        }
+        /* Estilo para la imagen */
+        #myImage {
+            width: 200px;
+            margin-top: 80px;
+            z-index: 10000; /* Asegura que la imagen esté sobre la capa negra */
+        }
+
         body {
             overflow-x: hidden;
+        }
+
+        .watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-size: 12px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
     <title>Virreymi</title>
@@ -355,7 +383,7 @@
         </div>
 
         <p class="text-center mt-10 mb-5 text-2xl font-semibold">En asociacion con</p>
-        <img class="mx-auto" src="./img/allianz_logo.png" alt="" style="width: 200px;">
+        <img class="mx-auto" src="./img/allianz_logo.jpg" alt="" style="width: 200px;">
 
     </div>
 
@@ -368,10 +396,27 @@
         <div class="container mx-auto mt-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex flex-col items-center">
+
                     <p class="font-semibold text-center md:text-left" style="font-size: 30px;">¡Ponte en contacto con nuestros expertos, te llevarán de la mano para elegir un plan que se adapte a tus necesidades!.</p>
-                    <img src="{{asset('img/certificado.png')}}" alt="cetificado" style="width: 200px; margin-top:80px;">
+                    <img  id="myImage" src="{{asset('img/certificado.png')}}" alt="cetificado" style="width: 200px; margin-top:80px;">
+                    <div class="watermark">© Consultora Certificada</div>
+
                 </div>
-                
+                <script>
+                    // Función para deshabilitar el botón derecho del ratón
+                    document.addEventListener('contextmenu', function(e) {
+                        e.preventDefault();
+                    });
+                    // Mostrar la capa negra cuando se detecta un intento de captura de pantalla
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'PrintScreen') {
+                            console.log('oculta')
+                            document.querySelector('.overlay').style.display = 'block';
+                            document.getElementById('myImage').classList.add('hidden'); // Agrega la clase 'hidden' para ocultar la imagen
+                        }
+                    });
+                    
+                </script>
                 <div class="text-center md:text-center">
                     <img src="./img/asesor.png" alt="">
                     <p style="color: #4F005B; font-size: 24px;" class="font-semibold mt-5 md:mt-2">Vianey Oceguera Zepeda</p>
