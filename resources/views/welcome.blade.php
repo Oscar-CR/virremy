@@ -41,7 +41,7 @@
         #myImage {
             width: 200px;
             margin-top: 80px;
-            z-index: 10000; /* Asegura que la imagen esté sobre la capa negra */
+            z-index: 10; /* Asegura que la imagen esté sobre la capa negra */
         }
 
         body {
